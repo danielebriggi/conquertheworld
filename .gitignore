@@ -1,0 +1,7 @@
+old
+.gitmodules
+node_modules
+static/audios
+public
+.DS_Store
+._.DS_Store
