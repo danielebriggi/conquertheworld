@@ -1,17 +1,20 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Pagamenti
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+  <ion-list *ngFor='let value of values; trackBy: index;'>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <ion-thumbnail item-start>
+        <img [src]="value.image">
+      </ion-thumbnail>
+      <h2>{{value.name}}</h2>
+      <p>{{value.negozio}}</p>
+      <button ion-button clear item-end>{{value.importo | currency: 'EUR'}}</button>
     </ion-item>
   </ion-list>
 </ion-content>

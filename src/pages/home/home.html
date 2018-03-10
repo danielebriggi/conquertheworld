@@ -5,13 +5,11 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom] = "15">
+    <agm-marker [latitude]="lat" [longitude]="lng" (click)="presentProfileModal()"></agm-marker>
+    <agm-marker [latitude]="45.459818" [longitude]="9.189377"></agm-marker>
+    <agm-marker [latitude]="45.444664" [longitude]="9.211374"></agm-marker>
+    <agm-marker [latitude]="45.441624" [longitude]="9.212082"></agm-marker>
+    <agm-circle [latitude]="lat" [longitude]="lng" [radius]="500" [fillOpacity]="0.20" [fillColor]="'black'"></agm-circle>
+  </agm-map>
 </ion-content>
