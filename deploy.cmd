@@ -114,9 +114,9 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 )
 
 :: 5. Copy web.config
-:: pushd "%DEPLOYMENT_TARGET%"
-:: copy "web.config" "www\web.config"
-:: popd
+pushd "%DEPLOYMENT_TARGET%"
+copy "web.config" "www\web.config"
+popd
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 goto end
