@@ -10,7 +10,6 @@ import { LostsPage } from '../losts/losts';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
     selector: 'page-risiko',
     templateUrl: 'risiko.html',

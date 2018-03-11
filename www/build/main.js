@@ -1,6 +1,23 @@
-webpackJsonp([3],{
+webpackJsonp([0],{
 
-/***/ 111:
+/***/ 121:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 121;
+
+/***/ }),
+
+/***/ 122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52,7 +69,7 @@ var LostsPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-losts',template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/pages/losts/losts.html"*/'<!--\n  Generated template for the LostsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>{{ nickname }}</ion-title>\n        <ion-buttons end>\n            <button ion-button navPop>\n                Chiudi\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <img src="/assets/imgs/{{ avatar }}" width="150px">\n    <br>\n    <h1>{{ city }} è il territorio di {{ nickname }}!</h1>\n    <h6>Spendi\n        <strong>{{ achievement }} euro\n            <br>\n        </strong> per conquistare {{ city }}</h6>\n</ion-content>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/pages/losts/losts.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], LostsPage);
     return LostsPage;
 }());
@@ -61,7 +78,24 @@ var LostsPage = (function () {
 
 /***/ }),
 
-/***/ 112:
+/***/ 163:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 163;
+
+/***/ }),
+
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -111,7 +145,7 @@ var ResultPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-result',template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/pages/result/result.html"*/'<!--\n  Generated template for the ResultPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Risultato</ion-title>\n    <ion-buttons end>\n        <button ion-button navPop>\n            Chiudi\n        </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <img src="/assets/imgs/winner.jpeg" width="150px"><br>\n    <h1>Hai conquistato<br> {{ city }}!</h1>\n    <h6>Sei in testa con {{ score }} euro spesi</h6>\n</ion-content>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/pages/result/result.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], ResultPage);
     return ResultPage;
 }());
@@ -120,15 +154,15 @@ var ResultPage = (function () {
 
 /***/ }),
 
-/***/ 113:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RisikoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__result_result__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__result_result__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__losts_losts__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__losts_losts__ = __webpack_require__(122);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -164,7 +198,7 @@ var RisikoPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
             selector: 'page-risiko',template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/pages/risiko/risiko.html"*/'<!--\n  Generated template for the RisikoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <ion-title>Le tue conquiste</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n    <div class="container">\n        <ion-img src="/assets/imgs/risiko2.png"></ion-img>\n        <div class="pin" (click)="open(1)" style="top:111px; left:328px"></div>\n        <div class="pin" (click)="open(2)" style="top:264px; left:431px"></div>\n        <div class="pin" (click)="open(3)" style="top:187px; left:641px"></div>\n        <div class="pin" (click)="openLost(4)" style="top:470px; left:280px"></div>\n        <div class="pin" (click)="openLost(5)" style="top:360px; left:740px"></div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/pages/risiko/risiko.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* ModalController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* ModalController */]])
     ], RisikoPage);
     return RisikoPage;
 }());
@@ -173,62 +207,12 @@ var RisikoPage = (function () {
 
 /***/ }),
 
-/***/ 124:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 124;
-
-/***/ }),
-
-/***/ 165:
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"../pages/losts/losts.module": [
-		302,
-		2
-	],
-	"../pages/result/result.module": [
-		303,
-		1
-	],
-	"../pages/risiko/risiko.module": [
-		304,
-		0
-	]
-};
-function webpackAsyncContext(req) {
-	var ids = map[req];
-	if(!ids)
-		return Promise.reject(new Error("Cannot find module '" + req + "'."));
-	return __webpack_require__.e(ids[1]).then(function() {
-		return __webpack_require__(ids[0]);
-	});
-};
-webpackAsyncContext.keys = function webpackAsyncContextKeys() {
-	return Object.keys(map);
-};
-webpackAsyncContext.id = 165;
-module.exports = webpackAsyncContext;
-
-/***/ }),
-
 /***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__risiko_risiko__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__risiko_risiko__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(211);
@@ -305,7 +289,7 @@ var ContactPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-contact',template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Punteggio Poste Pay\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list *ngFor=\'let value of values; trackBy: index;\'>\n    <ion-item>\n      <ion-thumbnail item-start>\n        <img [src]="value.image">\n      </ion-thumbnail>\n      <h2>{{value.name}}</h2>\n      <p>{{value.negozio}}</p>\n      <button ion-button clear item-end>{{value.importo | currency: \'EUR\'}}</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/pages/contact/contact.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ContactPage);
     return ContactPage;
 }());
@@ -347,9 +331,9 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/pages/home/home.html"*/'<ion-header [color]="yellow">\n    <ion-navbar>\n        <ion-title>Sconti Poste Pay</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <iframe src="https://www.poste.it/bancoposta/sconti/mappa.shtml?location=milano" frameborder="0"></iframe>\n</ion-content>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/pages/home/home.html"*/'<ion-header [color]="yellow">\n    <ion-navbar>\n        <ion-title>Sconti Poste Pay</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <iframe src="https://www.poste.it/bancoposta/sconti/mappa.shtml?location=milano" frameborder="0"></iframe>\n</ion-content>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */]])
     ], HomePage);
     return HomePage;
 }());
@@ -377,9 +361,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_losts_losts__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_result_result__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_risiko_risiko__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pages_losts_losts__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_result_result__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_risiko_risiko__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(18);
@@ -429,11 +413,7 @@ var AppModule = (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
-                    links: [
-                        { loadChildren: '../pages/losts/losts.module#LostsPageModule', name: 'LostsPage', segment: 'losts', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/result/result.module#ResultPageModule', name: 'ResultPage', segment: 'result', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/risiko/risiko.module#RisikoPageModule', name: 'RisikoPage', segment: 'risiko', priority: 'low', defaultHistory: [] }
-                    ]
+                    links: []
                 }),
                 __WEBPACK_IMPORTED_MODULE_13__agm_core__["a" /* AgmCoreModule */].forRoot({
                     apiKey: 'AIzaSyDx8x2n_i8KNBwl0f8bhnePw_AsB5JfkK0'
@@ -501,7 +481,7 @@ var MyApp = (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -536,7 +516,7 @@ var AboutPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-about',template:/*ion-inline-start:"/storage/Documents/projects/conquertheworld/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/storage/Documents/projects/conquertheworld/src/pages/about/about.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], AboutPage);
     return AboutPage;
 }());
