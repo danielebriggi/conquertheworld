@@ -1,3 +1,6 @@
+import { LostsPage } from './../pages/losts/losts';
+import { ResultPage } from './../pages/result/result';
+import { RisikoPage } from './../pages/risiko/risiko';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -14,32 +17,38 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
-  declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDx8x2n_i8KNBwl0f8bhnePw_AsB5JfkK0'
-    })
-  ],
-  bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
-  ]
+    declarations: [
+        MyApp,
+        AboutPage,
+        ContactPage,
+        HomePage,
+        TabsPage,
+        RisikoPage,
+        ResultPage,
+        LostsPage
+    ],
+    imports: [
+        BrowserModule,
+        IonicModule.forRoot(MyApp),
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyDx8x2n_i8KNBwl0f8bhnePw_AsB5JfkK0'
+        })
+    ],
+    bootstrap: [IonicApp],
+    entryComponents: [
+        MyApp,
+        AboutPage,
+        ContactPage,
+        HomePage,
+        TabsPage,
+        RisikoPage,
+        ResultPage,
+        LostsPage,
+    ],
+    providers: [
+        StatusBar,
+        SplashScreen,
+        { provide: ErrorHandler, useClass: IonicErrorHandler }
+    ]
 })
-export class AppModule {}
+export class AppModule { }

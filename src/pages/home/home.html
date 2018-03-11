@@ -1,15 +1,9 @@
 <ion-header [color]="yellow">
-  <ion-navbar>
-    <ion-title>Mappa</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Sconti Poste Pay</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <agm-map [latitude]="lat" [longitude]="lng" [zoom] = "15">
-    <agm-marker [latitude]="lat" [longitude]="lng" (click)="presentProfileModal()"></agm-marker>
-    <agm-marker [latitude]="45.459818" [longitude]="9.189377"></agm-marker>
-    <agm-marker [latitude]="45.444664" [longitude]="9.211374"></agm-marker>
-    <agm-marker [latitude]="45.441624" [longitude]="9.212082"></agm-marker>
-    <agm-circle [latitude]="lat" [longitude]="lng" [radius]="500" [fillOpacity]="0.20" [fillColor]="'black'"></agm-circle>
-  </agm-map>
+    <iframe src="https://www.poste.it/bancoposta/sconti/mappa.shtml?location=milano" frameborder="0"></iframe>
 </ion-content>

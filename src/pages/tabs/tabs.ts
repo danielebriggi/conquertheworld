@@ -1,3 +1,4 @@
+import { RisikoPage } from './../risiko/risiko';
 import { Component } from '@angular/core';
 
 import { AboutPage } from '../about/about';
@@ -9,8 +10,8 @@ import { HomePage } from '../home/home';
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
+  tab1Root = RisikoPage;
+  tab2Root = HomePage;
   tab3Root = ContactPage;
 
   constructor() {

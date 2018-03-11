@@ -1,0 +1,17 @@
+page-risiko {
+    .scroll-content {
+        overflow-x: scroll;
+    }
+    ion-img {
+        width: 1293px;
+        height: 713px;
+    }
+    .container {
+        position: relative;
+        .pin {
+            position: absolute;
+            width: 44px;
+            height: 65px;
+        }
+    }
+}
