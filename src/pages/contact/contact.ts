@@ -9,17 +9,17 @@ export class ContactPage {
   values: any
   constructor(public navCtrl: NavController) {
     this.values = [{
-      name: "Paolo Rossi",
+      date: "08/03/2018 14:22",
       importo: 4,
       negozio: "McDonald",
       image: "assets/imgs/donald.png"
     },{
-      name: "Paolo Rossi",
+      date: "08/03/2018 11:38",
       importo: 2,
       negozio: "Farmacia Bonomelli",
       image: "assets/imgs/merchant.png"
     },{
-      name: "Paolo Rossi",
+      date: "07/03/2018 12:38",
       importo: 45,
       negozio: "Zara",
       image: "assets/imgs/zara.png"

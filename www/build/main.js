@@ -299,7 +299,7 @@ var TabsPage = (function () {
         this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n    <ion-tab [root]="tab1Root" tabTitle="Conquista" tabIcon="map"></ion-tab>\n\n    <ion-tab [root]="tab2Root" tabTitle="Sconti" tabIcon="md-appstore"></ion-tab>\n\n    <ion-tab [root]="tab3Root" tabTitle="Punteggio" tabIcon="flask"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\tabs\tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n    <ion-tab [root]="tab1Root" tabTitle="Conquista" tabIcon="map"></ion-tab>\n\n    <ion-tab [root]="tab2Root" tabTitle="Sconti" tabIcon="md-appstore"></ion-tab>\n\n    <ion-tab [root]="tab3Root" tabTitle="Pagamenti" tabIcon="cash"></ion-tab>\n\n</ion-tabs>\n\n'/*ion-inline-end:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -332,17 +332,17 @@ var ContactPage = (function () {
     function ContactPage(navCtrl) {
         this.navCtrl = navCtrl;
         this.values = [{
-                name: "Paolo Rossi",
+                date: "08/03/2018 14:22",
                 importo: 4,
                 negozio: "McDonald",
                 image: "assets/imgs/donald.png"
             }, {
-                name: "Paolo Rossi",
+                date: "08/03/2018 11:38",
                 importo: 2,
                 negozio: "Farmacia Bonomelli",
                 image: "assets/imgs/merchant.png"
             }, {
-                name: "Paolo Rossi",
+                date: "07/03/2018 12:38",
                 importo: 45,
                 negozio: "Zara",
                 image: "assets/imgs/zara.png"
@@ -350,7 +350,7 @@ var ContactPage = (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Punteggio PostePay\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list *ngFor=\'let value of values; trackBy: index;\'>\n\n    <ion-item>\n\n      <ion-thumbnail item-start>\n\n        <img [src]="value.image">\n\n      </ion-thumbnail>\n\n      <h2>{{value.name}}</h2>\n\n      <p>{{value.negozio}}</p>\n\n      <button ion-button clear item-end>{{value.importo | currency: \'EUR\'}}</button>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\contact\contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\contact\contact.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Lista Pagamenti\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list *ngFor=\'let value of values; trackBy: index;\'>\n\n    <ion-item class="item">\n\n      <ion-thumbnail item-start>\n\n        <img class="logo-shop" [src]="value.image">\n\n      </ion-thumbnail>\n\n      <h2>{{value.negozio}}</h2>\n\n      <p>{{value.date}}</p>\n\n      <button ion-button clear item-end class="out">{{value.importo | currency: \'EUR\'}}</button>\n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Vito96\Documents\Lavori\conquertheworld\src\pages\contact\contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ContactPage);
