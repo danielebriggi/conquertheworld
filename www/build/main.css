@@ -27972,6 +27972,24 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+.logo {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 page-home agm-map {
   height: 100%;
   width: 100%;
@@ -27995,6 +28013,22 @@ page-losts h1 {
 }
 
 page-losts h6 {
+  color: #0047BB;
+}
+
+page-premi ion-content {
+  text-align: center;
+}
+
+page-premi img {
+  display: inline-block;
+}
+
+page-premi h1 {
+  color: #181705;
+}
+
+page-premi h6 {
   color: #0047BB;
 }
 

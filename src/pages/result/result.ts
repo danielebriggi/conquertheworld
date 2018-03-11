@@ -16,6 +16,7 @@ export class ResultPage {
 
     city: string = "";
     score: string = "";
+    coupon: boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
       const id = navParams.get("id");
@@ -32,6 +33,11 @@ export class ResultPage {
                 this.city = "la Scala";
                 this.score = "45";
                 break;
+            case 4:
+                this.city = "il Castello Sforzesco";
+                this.score = "80";
+                this.coupon = true;
+            break;
       }
   }
 

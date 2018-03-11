@@ -1,4 +1,5 @@
 import { LostsPage } from './../pages/losts/losts';
+import { PremiPage } from './../pages/premi/premi';
 import { ResultPage } from './../pages/result/result';
 import { RisikoPage } from './../pages/risiko/risiko';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -25,7 +26,8 @@ import { AgmCoreModule } from '@agm/core';
         TabsPage,
         RisikoPage,
         ResultPage,
-        LostsPage
+        LostsPage,
+        PremiPage
     ],
     imports: [
         BrowserModule,
@@ -44,6 +46,7 @@ import { AgmCoreModule } from '@agm/core';
         RisikoPage,
         ResultPage,
         LostsPage,
+        PremiPage
     ],
     providers: [
         StatusBar,

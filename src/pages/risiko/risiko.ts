@@ -2,6 +2,7 @@ import { ResultPage } from './../result/result';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { LostsPage } from '../losts/losts';
+import { PremiPage } from '../premi/premi';
 
 /**
  * Generated class for the RisikoPage page.
@@ -26,6 +27,10 @@ export class RisikoPage {
 
     openLost(id) {
         this.modalCtrl.create(LostsPage, { id }).present();
+    }
+
+    goToCart() {
+        this.modalCtrl.create(PremiPage, {}).present();
     }
 
 }
